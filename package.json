@@ -12,8 +12,8 @@
   },
   "scripts": {
     "start": "npm run build & npm run serve",
-    "build": "watchify ./src/app.js -o ./public/js/bundle.js -v; wait",
-    "serve": "browser-sync start --server ./public/ --files \"./public/index.html,./public/js/bundle.js\""
+    "build": "watchify ./src/app.js -o ./bundle.js -v; wait",
+    "serve": "browser-sync start --server ./ --files \"./index.html,./bundle.js\""
   },
   "dependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
