@@ -1,0 +1,26 @@
+{
+  "name": "javascript-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/takumifukasawa/javascript-starter.git",
+  "author": "takumifukasawa <fukapon912@gmail.com>",
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "scripts": {
+    "start": "npm run build & npm run serve",
+    "build": "watchify ./src/app.js -o ./public/js/bundle.js -v; wait",
+    "serve": "browser-sync start --server ./public/ --files \"./public/index.html,./public/js/bundle.js\""
+  },
+  "dependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.12",
+    "watchify": "^3.9.0"
+  }
+}
