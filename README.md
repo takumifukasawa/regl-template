@@ -12,3 +12,4 @@ $ yarn (or $ npm install)
 // watchifyでのjavascriptビルドと簡易サーバー（browser-sync）を立ち上げる
 $ yarn start (or $ npm start)
 ```
+# regl-template

@@ -1,8 +1,7 @@
 {
-  "name": "javascript-starter",
+  "name": "regl-template",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/takumifukasawa/javascript-starter.git",
   "author": "takumifukasawa <fukapon912@gmail.com>",
   "license": "MIT",
   "browserify": {
